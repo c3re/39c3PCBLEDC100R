@@ -2,7 +2,7 @@
 
 The 38c3PCBLEDC100 is a Coaster for your drinks with option for LED and microcontroller upgrade. By stacking the coasters, you can also build nice blinky towers.
 
-![rendering of the 38c3PCBLEDC100R](https://github.com/c3re/38c3PCBLEDC100R/blob/master/Rev.0/Media/Bottom.png)
+//![rendering of the 38c3PCBLEDC100R](https://github.com/c3re/38c3PCBLEDC100R/blob/master/Rev.0/Media/Bottom.png)
 
 ## Rev.0
 
