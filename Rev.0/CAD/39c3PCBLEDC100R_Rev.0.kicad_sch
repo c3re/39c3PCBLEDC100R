@@ -5127,7 +5127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3899131-3621-4daf-bc7a-933af3369db1")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 140.97 102.87 90)
 			(effects
 				(font
@@ -5185,7 +5185,7 @@
 		(instances
 			(project ""
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
