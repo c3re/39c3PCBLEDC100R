@@ -14,8 +14,7 @@ The Din pin of the first LED is connected to pin D4 (GPIO2) of the Wemos D1 mini
 The Button is connected to D3 (GPIO0)
 
 ## License
-
-The 39c3 Logo    
+    
 39c3PCBLEDC100R © 2025 by c3RE is licensed under CC BY 4.0. To view a copy of this license,   
 visit http://creativecommons.org/licenses/by/4.0/
 
