@@ -1,0 +1,11 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"+5V_3, +5V_2",MountingHole_3.2mm_M3_DIN965_Pad,2,+5V,
+A1,Protoarea,1,~,
+"D1, D2, D3, D4, D5, D6, D7, D8",WS2812_THT,8,WS2812D-F5,C190565
+DIN,TestPoint_THTPad_D2.5mm_Drill1.2mm,1,Din,
+DOUT,TestPoint_THTPad_D2.5mm_Drill1.2mm,1,Dout,
+"GND_3, GND_2",MountingHole_3.2mm_M3_DIN965_Pad,2,GND,
+Q1,TO-92_Inline,1,ZVNL110A,
+R1,1206_combi_handsolder,1,100,
+"R2, R3",1206_combi_handsolder,2,10k,
+SW1,SW_TH_Tactile_Omron_B3F-102x,1,SW_SPST,

@@ -3,4 +3,5 @@ Pos.,Qty.,Designator,Description,Manufacturer,Part-No. (Manufacturer),Vendor,Par
 2,2,R2-R3,Metal Film Resistors 10kΩ 250mW,YAGEO,MFR-25FTE52-10K,LCSC,C172967
 3,1,Q1,MOSFET N-CH 100V 320MA TO92-3,Diodes Inc.,ZVNL110A,DigiKey,ZVNL110A-ND
 4,8,D1-D8,D=5mm RGB LED(Built-in IC),Worldsemi,WS2812D-F5,LCSC,C190565
-5,4,na,Spacer,Shuntian,M3X25+6,LCSC,C775782 
+5,4,na,Spacer,Shuntian,M3X25+6,LCSC,C775782
+6,1,SW1,Switch SPST-NO,Omron,B3F-1005,LCSC,C397293 

@@ -909,6 +909,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:2N7000"
 			(pin_names
 				(hide yes)
@@ -1721,6 +1857,12 @@
 		(uuid "33361cc4-8609-4db8-9cba-67f9f39e1474")
 	)
 	(junction
+		(at 76.2 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "392943b9-72b0-4fd0-af98-1c0915d53147")
+	)
+	(junction
 		(at 87.63 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1835,36 +1977,32 @@
 		(uuid "ff268e9f-5f5a-4365-a69c-76f4626ada92")
 	)
 	(no_connect
-		(at 104.14 96.52)
-		(uuid "07dc2ae2-ed66-4de5-aa8e-cb786f76ca5e")
-	)
-	(no_connect
-		(at 78.74 96.52)
+		(at 63.5 96.52)
 		(uuid "2523e361-a525-423c-a933-264080042413")
 	)
 	(no_connect
-		(at 104.14 91.44)
+		(at 88.9 91.44)
 		(uuid "2cbdcff9-342b-42bf-9091-58290c060f16")
 	)
 	(no_connect
-		(at 104.14 109.22)
+		(at 88.9 109.22)
 		(uuid "51501653-d49c-4520-8737-50e5c3503a35")
 	)
 	(no_connect
-		(at 78.74 88.9)
+		(at 63.5 88.9)
 		(uuid "59f51e5b-d1b7-418a-bbbe-2dd5ff1c2494")
 	)
 	(no_connect
-		(at 78.74 99.06)
+		(at 63.5 99.06)
 		(uuid "e3f6e519-f773-4bff-ad99-1eea0d5e9020")
 	)
 	(no_connect
-		(at 104.14 93.98)
+		(at 88.9 93.98)
 		(uuid "fa2b3b45-1656-4136-8751-5d2bff770772")
 	)
 	(wire
 		(pts
-			(xy 101.6 96.52) (xy 104.14 96.52)
+			(xy 86.36 96.52) (xy 99.06 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1911,6 +2049,16 @@
 			(type default)
 		)
 		(uuid "0a95e842-b441-4d8e-8b6d-2f23c6a34e95")
+	)
+	(wire
+		(pts
+			(xy 76.2 125.73) (xy 76.2 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d3a4077-74f7-4ae8-8f21-16fbea087e97")
 	)
 	(wire
 		(pts
@@ -1984,7 +2132,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 78.74) (xy 93.98 76.2)
+			(xy 78.74 78.74) (xy 78.74 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1994,7 +2142,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 72.39) (xy 88.9 78.74)
+			(xy 73.66 72.39) (xy 73.66 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2064,7 +2212,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 99.06) (xy 81.28 99.06)
+			(xy 63.5 99.06) (xy 66.04 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2244,7 +2392,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 88.9) (xy 120.65 88.9)
+			(xy 86.36 88.9) (xy 120.65 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2334,7 +2482,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 101.6) (xy 106.68 101.6)
+			(xy 86.36 101.6) (xy 106.68 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2344,7 +2492,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 86.36) (xy 120.65 86.36)
+			(xy 86.36 86.36) (xy 120.65 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2381,6 +2529,16 @@
 			(type default)
 		)
 		(uuid "80667cd0-3827-4faa-b6c5-89ae34d76659")
+	)
+	(wire
+		(pts
+			(xy 99.06 110.49) (xy 99.06 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "814b849a-71e9-4c94-a695-0e02a4bb7cbf")
 	)
 	(wire
 		(pts
@@ -2434,7 +2592,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 104.14) (xy 109.22 104.14)
+			(xy 86.36 104.14) (xy 109.22 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2454,7 +2612,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 76.2) (xy 125.73 76.2)
+			(xy 78.74 76.2) (xy 125.73 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2494,7 +2652,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 106.68) (xy 111.76 106.68)
+			(xy 86.36 106.68) (xy 111.76 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2531,6 +2689,16 @@
 			(type default)
 		)
 		(uuid "a341383e-7fff-43ee-b180-f2fa76acb31b")
+	)
+	(wire
+		(pts
+			(xy 76.2 125.73) (xy 99.06 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67b6564-0957-41ed-b59b-ebb5d25814dd")
 	)
 	(wire
 		(pts
@@ -2574,7 +2742,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 99.06) (xy 118.11 99.06)
+			(xy 86.36 99.06) (xy 118.11 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2634,7 +2802,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 88.9) (xy 81.28 88.9)
+			(xy 63.5 88.9) (xy 66.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2674,7 +2842,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 81.28 96.52)
+			(xy 63.5 96.52) (xy 66.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2714,7 +2882,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 109.22) (xy 104.14 109.22)
+			(xy 86.36 109.22) (xy 88.9 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2794,7 +2962,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 91.44) (xy 104.14 91.44)
+			(xy 86.36 91.44) (xy 88.9 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2804,7 +2972,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 119.38) (xy 91.44 124.46)
+			(xy 76.2 119.38) (xy 76.2 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2844,7 +3012,17 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 93.98) (xy 104.14 93.98)
+			(xy 99.06 125.73) (xy 99.06 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0234d78-a348-4148-bf18-1db2d60a1cb7")
+	)
+	(wire
+		(pts
+			(xy 86.36 93.98) (xy 88.9 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3004,7 +3182,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 88.9 72.39 0)
+		(at 73.66 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3013,7 +3191,7 @@
 		(fields_autoplaced yes)
 		(uuid "0414942c-72f2-414f-a4c3-4bf4e1e98986")
 		(property "Reference" "#PWR03"
-			(at 88.9 76.2 0)
+			(at 73.66 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +3200,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 88.9 67.31 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3030,7 +3208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 72.39 0)
+			(at 73.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3039,7 +3217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 72.39 0)
+			(at 73.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,7 +3226,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 88.9 72.39 0)
+			(at 73.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3255,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fc7e913-8f1e-424a-86dc-81f86464fb10")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 186.69 114.3 90)
 			(effects
 				(font
@@ -3128,7 +3306,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -3144,7 +3322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1619038a-dbe8-4449-8f7c-c0143dcd9d1c")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 148.59 80.01 0)
 			(effects
 				(font
@@ -3194,7 +3372,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3515,6 +3693,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 99.06 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "428bfb1e-a916-4e4a-a21f-c52fa1249c6c")
+		(property "Reference" "SW1"
+			(at 101.6 114.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 101.6 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-102x"
+			(at 99.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 99.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 99.06 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d15fb46-c202-4896-8089-7aadf1f579a5")
+		)
+		(pin "1"
+			(uuid "8ed70c5a-f540-489f-96e3-221d2fb4464b")
+		)
+		(instances
+			(project ""
+				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Protoarea:Protoarea")
 		(at 125.73 91.44 0)
 		(unit 1)
@@ -3607,7 +3864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ad4b0aa-975a-49da-9383-819373b91d1a")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR02"
 			(at 63.5 64.77 0)
 			(effects
 				(font
@@ -3657,7 +3914,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR06")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3755,7 +4012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ef3fdab-18b4-4b78-bc75-595057918df9")
-		(property "Reference" "H4"
+		(property "Reference" "H5"
 			(at 186.69 121.285 90)
 			(effects
 				(font
@@ -3806,7 +4063,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H4")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -3889,7 +4146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67a990f6-bb48-44f2-8a36-c8d932879f16")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 177.8 139.7 0)
 			(effects
 				(font
@@ -3939,7 +4196,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4029,16 +4286,16 @@
 	)
 	(symbol
 		(lib_id "MCU_Module:WeMos_D1_mini")
-		(at 91.44 99.06 0)
+		(at 76.2 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70cd577b-437a-4411-9c04-be08ccc0680b")
 		(property "Reference" "U1"
-			(at 93.3959 119.38 0)
+			(at 78.1559 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4047,7 +4304,7 @@
 			)
 		)
 		(property "Value" "WeMos_D1_mini"
-			(at 93.3959 121.92 0)
+			(at 78.1559 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,7 +4313,7 @@
 			)
 		)
 		(property "Footprint" "Module:WEMOS_D1_mini_light"
-			(at 91.44 128.27 0)
+			(at 76.2 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4065,7 +4322,7 @@
 			)
 		)
 		(property "Datasheet" "https://wiki.wemos.cc/products:d1:d1_mini#documentation"
-			(at 44.45 128.27 0)
+			(at 29.21 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4074,7 +4331,7 @@
 			)
 		)
 		(property "Description" "32-bit microcontroller module with WiFi"
-			(at 91.44 99.06 0)
+			(at 76.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,13 +4400,13 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 182.88 95.25 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71b0c5ba-ea9b-42ab-8f39-aa0cb5b6e115")
-		(property "Reference" "H6"
+		(property "Reference" "H2"
 			(at 186.69 93.9799 90)
 			(effects
 				(font
@@ -4200,7 +4457,7 @@
 		(instances
 			(project ""
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H6")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -4298,7 +4555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aabcdb1-dd97-4b33-98a0-71c225397c7e")
-		(property "Reference" "H2"
+		(property "Reference" "H1"
 			(at 186.69 88.265 90)
 			(effects
 				(font
@@ -4349,7 +4606,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H2")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -4364,7 +4621,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7db2afdd-b778-4eeb-802d-0226beb9da82")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR05"
 			(at 125.73 109.22 0)
 			(effects
 				(font
@@ -4414,7 +4671,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR08")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4504,15 +4761,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 124.46 0)
+		(at 76.2 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "94629ade-d5ac-4aec-b8cd-bbe939120d9a")
-		(property "Reference" "#PWR01"
-			(at 91.44 130.81 0)
+		(property "Reference" "#PWR04"
+			(at 76.2 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,7 +4778,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 124.46 0)
+			(at 73.66 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +4786,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 124.46 0)
+			(at 76.2 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4538,7 +4795,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 124.46 0)
+			(at 76.2 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +4804,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 124.46 0)
+			(at 76.2 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4561,7 +4818,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR01")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4774,13 +5031,13 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 182.88 109.22 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6c138f2-2132-46f2-9d2f-6f547d2b179c")
-		(property "Reference" "H5"
+		(property "Reference" "H3"
 			(at 186.69 107.9499 90)
 			(effects
 				(font
@@ -4831,7 +5088,7 @@
 		(instances
 			(project ""
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H5")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -4929,7 +5186,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c36ebb3e-a5b1-43d8-b762-665ad1f3121f")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR01"
 			(at 63.5 36.83 0)
 			(effects
 				(font
@@ -4979,7 +5236,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5061,7 +5318,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d05a9b89-4fc3-485f-a19a-380546d5f65f")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR07"
 			(at 177.8 74.93 0)
 			(effects
 				(font
@@ -5111,7 +5368,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "#PWR04")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -5201,7 +5458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed97f8bb-26f6-42b4-b6dc-04c9765cbbfa")
-		(property "Reference" "H1"
+		(property "Reference" "H6"
 			(at 186.69 81.28 90)
 			(effects
 				(font
@@ -5252,7 +5509,7 @@
 		(instances
 			(project "Coaster_0.1"
 				(path "/4acc92b7-ae78-4f6f-8f1d-403b41b8ff51"
-					(reference "H1")
+					(reference "H6")
 					(unit 1)
 				)
 			)
